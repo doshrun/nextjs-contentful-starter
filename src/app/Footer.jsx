@@ -3,7 +3,7 @@ import React from 'react';
 function Footer() {
     return (
         <footer>
-            <div className="logos">
+            <div style="position:absolute; width:100%;height:131px;left:-45%; top:10px;">
                 <a 
                     referrerPolicy='origin' 
                     target='_blank' 
@@ -12,7 +12,7 @@ function Footer() {
                     <img 
                         src='https://trustseal.enamad.ir/logo.aspx?id=567151&Code=l9edf3vbBzI61Adx3apmENARvUxozD4x' 
                         alt='لوگو اینماد' 
-                        style={{ cursor: 'pointer', width: '100px', height: 'auto' }} 
+                        style={{ cursor: 'pointer', width: '100px', height: 'auto' }} code='l9edf3vbBzI61Adx3apmENARvUxozD4x'
                     />
                 </a>
             </div>
