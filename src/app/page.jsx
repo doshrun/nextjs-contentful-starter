@@ -2,6 +2,7 @@ import { notFound } from 'next/navigation';
 import { Hero } from '../components/Hero.jsx';
 import { Stats } from '../components/Stats.jsx';
 import { getPageFromSlug } from '../utils/content.js';
+import {Footer} from '../src/app/Footer.jsx';
 
 const componentMap = {
   hero: Hero,
