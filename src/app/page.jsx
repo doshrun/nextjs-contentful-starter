@@ -7,6 +7,7 @@ import {Footer} from '../src/app/Footer.jsx';
 const componentMap = {
   hero: Hero,
   stats: Stats,
+  Footer:Footer,
 };
 
 export default async function ComposablePage() {
