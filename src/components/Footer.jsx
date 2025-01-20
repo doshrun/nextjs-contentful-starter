@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 function Footer() {
@@ -20,5 +19,4 @@ function Footer() {
         </footer>
     );
 }
-
 export default Footer;
