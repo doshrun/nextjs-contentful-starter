@@ -1,7 +1,6 @@
 import Markdown from 'markdown-to-jsx';
 import Image from 'next/image';
 import { Button } from './Button.jsx';
-import { Footer } from './Footer.jsx';
 
 
 const themeClassMap = {
@@ -23,7 +22,6 @@ export const Hero = (props) => {
             </Markdown>
           )}
           {props.button && <Button {...props.button} />}
-          {props.Footer && <Footer {...props.Footer} />}
         </div>
         <div className="w-full aspect-[4/3] flex-1 relative overflow-hidden rounded-md">
           {props.image && (
