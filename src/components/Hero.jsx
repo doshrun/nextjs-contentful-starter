@@ -1,6 +1,8 @@
 import Markdown from 'markdown-to-jsx';
 import Image from 'next/image';
 import { Button } from './Button.jsx';
+import { Footer } from './Footer.jsx';
+
 
 const themeClassMap = {
   imgLeft: 'md:flex-row-reverse',
@@ -9,6 +11,7 @@ const themeClassMap = {
 
 export const Hero = (props) => {
   return (
+    <Footer/>
     <div className="px-6 py-16 bg-gray-100 sm:px-12 sm:py-24" data-sb-object-id={props.id}>
       <div className={`max-w-6xl mx-auto flex flex-col gap-12 md:items-center ${themeClassMap[props.theme] ?? themeClassMap['imgRight']}`}>
         <div className="w-full max-w-xl mx-auto flex-1">
