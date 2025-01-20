@@ -11,19 +11,6 @@ const themeClassMap = {
 
 export const Hero = (props) => {
   return (
-    <div style="position:absolute; width:100%;height:131px;left:-45%; top:10px;">
-                <a 
-                    referrerPolicy='origin' 
-                    target='_blank' 
-                    href='https://trustseal.enamad.ir/?id=567151&Code=l9edf3vbBzI61Adx3apmENARvUxozD4x'
-                >
-                    <img 
-                        src='https://trustseal.enamad.ir/logo.aspx?id=567151&Code=l9edf3vbBzI61Adx3apmENARvUxozD4x' 
-                        alt='لوگو اینماد' 
-                        style={{ cursor: 'pointer', width: '100px', height: 'auto' }} code='l9edf3vbBzI61Adx3apmENARvUxozD4x'
-                    />
-                </a>
-            </div>
     <div className="px-6 py-16 bg-gray-100 sm:px-12 sm:py-24" data-sb-object-id={props.id}>
       <div className={`max-w-6xl mx-auto flex flex-col gap-12 md:items-center ${themeClassMap[props.theme] ?? themeClassMap['imgRight']}`}>
         <div className="w-full max-w-xl mx-auto flex-1">
@@ -36,6 +23,7 @@ export const Hero = (props) => {
             </Markdown>
           )}
           {props.button && <Button {...props.button} />}
+          {props.Footer && <Footer {...props.Footer} />}
         </div>
         <div className="w-full aspect-[4/3] flex-1 relative overflow-hidden rounded-md">
           {props.image && (
